@@ -38,8 +38,10 @@
 
     <div class="row">
         <div class="input-field col s6">
-          <input id="em" type="text" class="validate" required>
+          <input id="em" type="email" class="validate" required>
           <label for="em">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+
         </div>
         <div class="input-field col s6">
           <input id="pn" type="intenger" class="validate" required>
@@ -53,22 +55,34 @@
     <div class="row">
     </div> <!-- CLOSE ROW -->
 
-      <div class="row">
-        <div class="input-field col s6">
-          <select id="leaveType" required>
-            <option value="" disabled selected>Choose Leave Type</option>
-            <option >Personal Time Off(PTO)</option>
-            <option >Sick Leave</option>
-            <option >Leave Without Pay (LWOP)</option>
-            <option >Other</option>
-          </select>
-          <!-- <label for="leaveType">Leave Type</label> -->
-        </div>
-      </div> <!-- CLOSE ROW -->
+    <table>
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
 
-      <div class="row">
-      </div> <!-- CLOSE ROW -->
-
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+    
       <div class="row">
       </div> <!-- CLOSE ROW -->
 
