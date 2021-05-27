@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <?!= include("page-css"); ?>
+    <div>
+      <h1 class="center-align">Kloudio - Leave Request Form</h1>
+    </div>
+  </head>
+  <body>
+    
+  <div class="container">
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="fn" type="text" class="validate" required>
+          <label for="fn">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="ln" type="text" class="validate" required>
+          <label for="ln">Last Name</label>
+        </div>
+    </div> <!-- CLOSE ROW -->
+    
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="sDate" type="text" class="datepicker" required>
+        <label for="sDate">Start Date</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="eDate" type="text" class="datepicker" required>
+        <label for="eDate">End Date</label>
+      </div>
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+        <div class="input-field col s6">
+          <select id="leaveType" required>
+            <option value="" disabled selected>Choose Leave Type</option>
+            <option >Personal Time Off(PTO)</option>
+            <option >Sick Leave</option>
+            <option >Leave Without Pay (LWOP)</option>
+            <option >Other</option>
+          </select>
+          <!-- <label for="leaveType">Leave Type</label> -->
+        </div>
+      </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+      </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+      </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="comments" type="text" class="validate" >
+          <label for="comments">Request Comments</label>
+        </div>
+      </div> <!-- CLOSE ROW -->
+
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+    </div> <!-- CLOSE ROW -->
+
+    <div class="row">
+      <button id="btn" class="waves-effect waves-light btn-small blue darken-1"><i class="material-icons right">cloud_upload</i>Submit</button>
+    </div> <!-- CLOSE ROW -->
+   </div> <!-- CLOSE CONTAINER -->
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <?!= include("page-js"); ?>
+  </body>
+</html>
